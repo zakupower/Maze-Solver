@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>VertexWeightedGraph</OriginalElement>
+  <nodes>
+    <node x="571.5" y="379.0">MazeIndex</node>
+    <node x="344.5863095238095" y="669.0">MazeGraphBuilder</node>
+    <node x="398.1414141414142" y="27.419191919191924">Graph</node>
+    <node x="1373.388888888889" y="77.77777777777783">ImageToMazeConverter</node>
+    <node x="433.77083333333337" y="1185.0">MazeImageSolver</node>
+    <node x="-72.72727272727275" y="1142.5454545454543">GraphToWeightedGraphConvertor</node>
+    <node x="117.5" y="258.0">UndirectedGraph</node>
+    <node x="1129.751488095238" y="33.5">Node</node>
+    <node x="806.5" y="269.0">VertexWeightedGraph</node>
+    <node x="411.77083333333337" y="993.0">Maze</node>
+    <node x="0.0" y="22.0">Queue</node>
+    <node x="777.2083333333333" y="22.22222222222223">Stack</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="UndirectedGraph" target="Queue">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="MazeGraphBuilder" target="UndirectedGraph">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UndirectedGraph" target="Stack">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Maze" target="MazeGraphBuilder">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Maze" target="MazeIndex">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Maze" target="UndirectedGraph">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="VertexWeightedGraph" target="Graph">
+      <point x="-196.125" y="-169.5" />
+      <point x="871.875" y="228.0" />
+      <point x="550.9545454545455" y="226.1818181818182" />
+      <point x="50.5" y="58.5" />
+    </edge>
+    <edge source="MazeImageSolver" target="Maze">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="MazeImageSolver" target="MazeIndex">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="VertexWeightedGraph" target="Node">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UndirectedGraph" target="Graph">
+      <point x="2.8421709430404007E-14" y="-180.5" />
+      <point x="-50.5" y="58.5" />
+    </edge>
+    <edge source="VertexWeightedGraph" target="Stack">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="MazeGraphBuilder" target="MazeIndex">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.2999999999999996" x="519.0000000000018" y="790.0000000000007" />
+  <SelectedNodes>
+    <node>VertexWeightedGraph</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
