@@ -45,9 +45,10 @@ public class MazeGraphBuilder {
         Set<MazeIndex> vertices = map.keySet();
         int counter = 0;
         int finalcounter = vertices.size();
-        MazeIndex tempMazeIndex;
+        LoadingBar loadingBar = new LoadingBar(finalcounter);
+        loadingBar.start();
         for(MazeIndex vertex : vertices) {
-            System.out.println(counter++ + ":" + finalcounter);
+            loadingBar.update(counter++);
             createMazeIndexEdge(vertex,map,vertex.getRowIndex()-1,vertex.getColIndex());
             createMazeIndexEdge(vertex,map,vertex.getRowIndex()+1,vertex.getColIndex());
             createMazeIndexEdge(vertex,map,vertex.getRowIndex(),vertex.getColIndex()-1);

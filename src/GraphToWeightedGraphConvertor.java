@@ -27,11 +27,12 @@ public class GraphToWeightedGraphConvertor {
         traverseQueue.queue(new Node(nodeIdToFinish,weight));
         weightedGraph = new VertexWeightedGraph(traverseQueue.peek());
         weightedGraph.addNode(traverseQueue.peek());
+        LoadingBar loadingBar = new LoadingBar(undirectedGraph.getSize());
+        loadingBar.start();
         while(!traverseQueue.isEmpty()) {
             Node currentNode = traverseQueue.dequeue();
-            if(traversedNodes.contains(currentNode.getId())) continue; // this does wonders
-            if(traversedNodes.size()%100==0)
-            System.out.println(traversedNodes.size() + ":" + undirectedGraph.getSize());
+            if(traversedNodes.contains(currentNode.getId())) continue; // this does wonders for the speed
+            loadingBar.update(traversedNodes.size());
             traversedNodes.add(currentNode.getId());
             addNeighbourEdges(currentNode,undirectedGraph.getNeighbourNodes(currentNode.getId()),traversedNodes,traverseQueue,--weight);
         }
