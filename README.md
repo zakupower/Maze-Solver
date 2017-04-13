@@ -21,6 +21,6 @@ DFS and BFS start to get really memory heavy after maze 200x200 but the Shortest
 The slowest part of the program is when the image is converted into a undirected graph.
 # Web mazes
 Mazes i have found on the web and edited just so they can fit my rules of a maze<br>
-![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMaze2Solved%20ShortestRoute.png)<br>
+![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMaze2Solved%20ShortestRoute.png) - 103831 ms - 1.73 min<br>
 ![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMaze3Solved%20ShortestRoute.png) - 123047 ms - 2.05 min
 ![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMazeSolved%20ShortestRoute.png) - 14.09 min
