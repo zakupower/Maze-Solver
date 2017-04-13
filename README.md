@@ -15,8 +15,8 @@ The solver uses undirected non-weighted graph for the DFS and BFS solving of the
 # Shortest Root
 For the shortest route it converts the graph to a vertices weighted undriected graph - very fast
 And finds the shortest route on an algorithm that looks for the highest weighted neighbour vertex.<br>
-![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/maze19Solved%20ShortestRoute.png)
-
+![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/maze19Solved%20ShortestRoute.png)<br>
+![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/mazeBossSolved%20ShortestRoute.png)<br>
 DFS and BFS start to get really memory heavy after maze 200x200 but the Shortest root remains really fast
 The slowest part of the program is when the image is converted into a undirected graph.
 # Web mazes
