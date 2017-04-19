@@ -24,5 +24,5 @@ Mazes i have found on the web and edited just so they can fit my rules of a maze
 ![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMaze2Solved%20ShortestRoute.png) - 103831 ms - 1.73 min<br>
 ![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMaze3Solved%20ShortestRoute.png) - 123047 ms - 2.05 min
 ![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMazeSolved%20ShortestRoute.png) - 14.09 min
-<b>700x700 maze</b> <br>
-![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMaze5Solved%20ShortestRoute.png)- 66.3 min
+
+![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMaze5Solved%20ShortestRoute.png)- <b>700x700 maze</b> - 66.3 min
