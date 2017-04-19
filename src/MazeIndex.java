@@ -1,7 +1,9 @@
+import java.io.Serializable;
+
 /**
  * Created by Tomov on 3.4.2017 г..
  */
-public class MazeIndex {
+public class MazeIndex implements Serializable {
     private int rowIndex;
     private int colIndex;
 

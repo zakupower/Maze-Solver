@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.*;
 
-public class UndirectedGraph implements Graph<Integer> {
+public class UndirectedGraph implements Graph<Integer>, Serializable {
     private int size = 0;
     private Map<Integer,Set<Integer>> adjacencyList;
     public UndirectedGraph() {

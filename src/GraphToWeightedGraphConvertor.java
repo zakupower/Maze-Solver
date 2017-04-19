@@ -36,7 +36,7 @@ public class GraphToWeightedGraphConvertor {
             traversedNodes.add(currentNode.getId());
             addNeighbourEdges(currentNode,undirectedGraph.getNeighbourNodes(currentNode.getId()),traversedNodes,traverseQueue,--weight);
         }
-        Toolkit.getDefaultToolkit().beep();
+        System.out.println();
         System.out.println("Undirected graph to weighted graph - Complete.");
         return weightedGraph;
     }

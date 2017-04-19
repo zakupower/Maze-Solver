@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -6,11 +7,12 @@ import java.util.Set;
 /**
  * Created by Tomov on 3.4.2017 г..
  */
-public class MazeGraphBuilder {
+public class MazeGraphBuilder implements Serializable {
     private int [] [] maze;
     private Map<MazeIndex,Integer> mazeVertexMap;
     private UndirectedGraph graph;
     private int nodeIdCounter = 0;
+
 
     public MazeGraphBuilder(int[][] maze){
         this.maze = maze;
@@ -46,6 +48,7 @@ public class MazeGraphBuilder {
         int counter = 0;
         int finalcounter = vertices.size();
         LoadingBar loadingBar = new LoadingBar(finalcounter);
+        System.out.println(""+vertices.size());
         loadingBar.start();
         for(MazeIndex vertex : vertices) {
             loadingBar.update(counter++);

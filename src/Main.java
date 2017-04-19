@@ -14,9 +14,9 @@ public class Main {
     public static void main(String[] args) throws IOException,Exception {
 //        BigInteger timeElapsed = new BigInteger(System.currentTimeMillis()+"");
         Timer.start();
-        String imageFileName = "webMaze2";
+        String imageFileName = "maze5";
         BufferedImage image = ImageIO.read(new File("mazes/"+imageFileName+".png"));
-        MazeImageSolver mazeImageSolver = new MazeImageSolver(image,imageFileName);
+        MazeImageSolver mazeImageSolver = new MazeImageSolver(image,imageFileName,true);//true to load from serialization
        // mazeImageSolver.solveBFS(0);// gets too hard on processor after 200x200
        // mazeImageSolver.solveDFS(0);// gets too hard on processor after 200x200
         mazeImageSolver.solveShortestPath(0);

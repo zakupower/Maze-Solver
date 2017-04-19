@@ -28,10 +28,15 @@ public class MazeImageSolver {
                 .stream()
                 .collect(Collectors.toMap(Map.Entry::getValue, Map.Entry::getKey));
     }
-    public MazeImageSolver(BufferedImage mazeImage,String fileName) {
+    public MazeImageSolver(BufferedImage mazeImage,String fileName, Boolean isSerialized) {
         this.fileName = fileName;
         mazeToSolve = mazeImage;
-        maze = new Maze(ImageToMazeConverter.getBinaryMaze(mazeImage));
+        if(isSerialized==true) {
+            maze = new Maze(fileName);
+        } else {
+            maze = new Maze(ImageToMazeConverter.getBinaryMaze(mazeImage),fileName);
+        }
+
         inversedMap = maze.getMazeMap().entrySet()
                 .stream()
                 .collect(Collectors.toMap(Map.Entry::getValue, Map.Entry::getKey));

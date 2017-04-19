@@ -1,3 +1,5 @@
+import java.awt.*;
+
 /**
  * Created by Tomov on 13.4.2017 г..
  */
@@ -19,6 +21,7 @@ public class LoadingBar {
         currentProgressPercent = percentOfProgress;
         if(newProgress==maxProgress || newProgress==maxProgress-1) { // because ill be using it zero based
             System.out.println("|");
+            Toolkit.getDefaultToolkit().beep();
         }
     }
 
