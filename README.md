@@ -32,4 +32,4 @@ Mazes i have found on the web and edited just so they can fit my rules of a maze
 ![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMazeSolved%20ShortestRoute.png)<br>
 <b>515x488</b> - 14.09 min<br>
 ![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMaze5Solved%20ShortestRoute.png)<br> <b>700x700</b> - 66.3 min<br>
-![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/finalMazeSolved%20ShortestRoute%20RED%20ROUTE.png)<br> <a href="https://en.wikipedia.org/wiki/Maze_solving_algorithm"> Wikipedia Maze Solving</a> - <b>1802x1802</b>
+![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/finalMazeSolved%20ShortestRoute%20RED%20ROUTE.png)<br> <a href="https://en.wikipedia.org/wiki/Maze_solving_algorithm"> Wikipedia Maze Solving</a> - <b>1802x1802</b> - ~24 hours(first build) / 1.02 minutes (loaded from serialization -> only the shortest path algorithm)
