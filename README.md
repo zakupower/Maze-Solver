@@ -23,6 +23,10 @@ And finds the shortest route on an algorithm that looks for the highest weighted
 <b>400x400</b><br>
 DFS and BFS start to get really memory heavy after maze 200x200 but the Shortest root remains really fast
 The slowest part of the program is when the image is converted into a undirected graph.
+
+# Algorithms illustrated
+![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/Algorithms%20illustrated.png)
+
 # Web mazes
 Mazes i have found on the web and edited just so they can fit my rules of a maze<br>
 ![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMaze2Solved%20ShortestRoute.png) <br>
