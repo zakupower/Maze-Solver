@@ -11,33 +11,24 @@ import java.util.ArrayList;
 import static sun.misc.Version.print;
 
 public class Main {
-    public static void main(String[] args) throws IOException,Exception {
-//        BigInteger timeElapsed = new BigInteger(System.currentTimeMillis()+"");
-        Timer.start();
-        String imageFileName = "maze5";
-        BufferedImage image = ImageIO.read(new File("mazes/"+imageFileName+".png"));
-        MazeImageSolver mazeImageSolver = new MazeImageSolver(image,imageFileName,true);//true to load from serialization
-       // mazeImageSolver.solveBFS(0);// gets too hard on processor after 200x200
-       // mazeImageSolver.solveDFS(0);// gets too hard on processor after 200x200
-        mazeImageSolver.solveShortestPath(0);
-//        timeElapsed = new BigInteger(""+ System.currentTimeMillis()).subtract(timeElapsed);
-//        double timeInMinutes = ((double)Integer.parseInt(timeElapsed.toString()))/60000;
-//        System.out.println("Complete. Time Elapsed: "+timeElapsed.toString()+"ms " + timeInMinutes+"min");
-        Timer.stop();
-        System.out.println("Solved in "+Timer.getTimeInM()+"min : "+ Timer.getTimeInS()+ "sec : " + Timer.getTimeInMs() + "milisec .");
+    public static void main(String[] args) throws IOException, Exception {
+//        for(int i = 1; i < 20; i++) {
+//            if(i==12) continue;//no route possible for maze12
+//            Timer.start();
+//            String imageFileName = "maze"+i;
+//            BufferedImage image = ImageIO.read(new File("mazes/" + imageFileName + ".png"));
+//            MazeImageSolver mazeImageSolver = new MazeImageSolver(image, imageFileName, true);//true to load from serialization
+//            mazeImageSolver.solveShortestPath(0);
+//            Timer.stop();
+//            System.out.println("Maze "+i+" solved in " + Timer.getTimeInM() + "min : " + Timer.getTimeInS() + "sec : " + Timer.getTimeInMs() + "milisec .");
+//        }
+            Timer.start();
+            String imageFileName = "finalMaze";
+            BufferedImage image = ImageIO.read(new File("mazes/" + imageFileName + ".png"));
+            MazeImageSolver mazeImageSolver = new MazeImageSolver(image, imageFileName, true);//true to load from serialization
+            mazeImageSolver.solveShortestPath(0);
+            Timer.stop();
+            System.out.println("Final Maze solved in " + Timer.getTimeInM() + "min : " + Timer.getTimeInS() + "sec : " + Timer.getTimeInMs() + "milisec .");
     }
 
-
-    private static void printMaze(int [] [] maze){
-        for(int rowIndex = 0; rowIndex < maze.length; rowIndex++) {
-            for(int colIndex = 0; colIndex < maze[rowIndex].length; colIndex++) {
-                if(maze[rowIndex][colIndex]==1) {
-                    System.out.print(maze[rowIndex][colIndex]);
-                } else {
-                    System.out.print(maze[rowIndex][colIndex]);
-                }
-            }
-            System.out.println();
-        }
-    }
 }
