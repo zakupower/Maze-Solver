@@ -25,6 +25,7 @@ DFS and BFS start to get really memory heavy after maze 200x200 but the Shortest
 The slowest part of the program is when the image is converted into a undirected graph.
 
 # Algorithms illustrated
+<h3>Maze Image to Nodes     ->  Nodes to Graph      ->   Graph to Weighted Graph      ->   Shortest root algorithm</h3>
 ![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/Algorithms%20illustrated.png)
 
 # Web mazes
