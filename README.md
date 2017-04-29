@@ -31,5 +31,5 @@ Mazes i have found on the web and edited just so they can fit my rules of a maze
 <b>512x384</b> - 123047 ms - 2.05 min<br>
 ![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMazeSolved%20ShortestRoute.png)<br>
 <b>515x488</b> - 14.09 min<br>
-![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMaze5Solved%20ShortestRoute.png)<br> <b>700x700 maze</b> - 66.3 min<br>
-![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/finalMazeSolved%20ShortestRoute%20RED%20ROUTE.png)<br> <a href="https://en.wikipedia.org/wiki/Maze_solving_algorithm"> Wikipedia Maze Solving</a> - 1802x1802 Maze
+![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/webMaze5Solved%20ShortestRoute.png)<br> <b>700x700</b> - 66.3 min<br>
+![alt tag](https://raw.githubusercontent.com/zakupower/Maze-Solver/master/mazes/finalMazeSolved%20ShortestRoute%20RED%20ROUTE.png)<br> <a href="https://en.wikipedia.org/wiki/Maze_solving_algorithm"> Wikipedia Maze Solving</a> - <b>1802x1802</b>
